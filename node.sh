@@ -1,4 +1,4 @@
-docker run -d -p 5555:5555 \
+docker run --rm -p 5555:5555 \
     -e SE_EVENT_BUS_HOST=10.5.0.5 \
     -e SE_EVENT_BUS_PUBLISH_PORT=4442 \
     -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 \
