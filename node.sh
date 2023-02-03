@@ -6,4 +6,5 @@ docker run --rm -p 5555:5555 \
     -v ${PWD}/assets:/opt/selenium/assets \
     -v /var/run/docker.sock:/var/run/docker.sock \
     --name selenium-node \
-    selenium/node-docker:4.5.3-20221024
+    selenium/node-docker:4.8.0-20230131
+
