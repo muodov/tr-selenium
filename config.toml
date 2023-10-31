@@ -21,9 +21,9 @@ video-image = "selenium/video:ffmpeg-4.3.1-20230131"
 
 # Uncomment the following section if you are running the node on a separate VM
 # Fill out the placeholders with appropriate values
-#[server]
-#host = 10.5.0.5
-#port = 5555
+[server]
+host = "10.100.9.22"
+port = 5555
 
 [node]
 session-timeout = 30
