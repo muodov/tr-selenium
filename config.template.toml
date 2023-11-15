@@ -2,9 +2,9 @@
 # Configs have a mapping between the Docker image to use and the capabilities that need to be matched to
 # start a container with the given image.
 configs = [
-    #"selenium/standalone-firefox:4.15.0-20231110", "{\"browserName\": \"firefox\"}",
-    "selenium/standalone-chrome:4.15.0-20231110", '{"browserName": "chrome"}'
-    #"selenium/standalone-edge:4.15.0-20231110", "{\"browserName\": \"MicrosoftEdge\"}"
+    #"selenium/standalone-firefox:<DOCKER_SELENIUM_VERSION>", "{\"browserName\": \"firefox\"}",
+    "selenium/standalone-chrome:<DOCKER_SELENIUM_VERSION>", '{"browserName": "chrome"}'
+    #"selenium/standalone-edge:<DOCKER_SELENIUM_VERSION>", "{\"browserName\": \"MicrosoftEdge\"}"
     ]
 
 # URL for connecting to the docker daemon
@@ -23,7 +23,7 @@ video-image = "selenium/video:ffmpeg-6.0-20231025"
 # Fill out the placeholders with appropriate values
 [server]
 # Node IP, should be different for each node
-host = "10.100.9.21"
+host = "<THIS_NODE_IP>"
 port = 5555
 
 [node]

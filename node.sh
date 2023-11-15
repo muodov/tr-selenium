@@ -1,4 +1,9 @@
 source local_params.sh
+
+sed -e "s/<THIS_NODE_IP>/${THIS_NODE_IP}/" \
+    -e "s/<DOCKER_SELENIUM_VERSION>/${DOCKER_SELENIUM_VERSION}/" \
+    ./config.template.toml > "./config.toml"
+
 docker run --rm -p 5555:5555 \
     -e SE_EVENT_BUS_HOST=${HUB_IP} \
     -e SE_EVENT_BUS_PUBLISH_PORT=4442 \
