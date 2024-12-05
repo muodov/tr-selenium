@@ -19,9 +19,12 @@ chmod 777 selenium-assets # make it writable by the docker containers (it will a
 sudo docker ps -a
 
 # stop all containers (e.g. after a manual abort)
-./stop-all-containers.sh
+sudo ./stop-all-containers.sh
 
 # remove all containers (clean up after an abort)
-./remove-all-containers.sh
+sudo ./remove-all-containers.sh
+
+# cleanup containers (stop and remove)
+sudo ./cleanup-containers.sh
 
 ```
