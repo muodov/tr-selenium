@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -xe
 
 source local_params.sh
