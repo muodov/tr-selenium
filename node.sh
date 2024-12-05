@@ -1,3 +1,5 @@
+set -xe
+
 source local_params.sh
 
 sed -e "s/<THIS_NODE_IP>/${THIS_NODE_IP}/" \
@@ -10,7 +12,7 @@ docker run --rm -p 5555:5555 \
     -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 \
     -e SE_NODE_HOST=${THIS_NODE_IP} \
     -e SE_ENABLE_TRACING=false \
-    -v ${PWD}/config.toml:/opt/bin/config.toml \
+    -v ${PWD}/config.toml:/opt/selenium/config.toml \
     -v /dev/shm/selenium-assets:/opt/selenium/assets \
     -v /var/run/docker.sock:/var/run/docker.sock \
     --name selenium-node \
