@@ -12,4 +12,5 @@ docker run --rm -p 5555:5555 \
     -e SE_NODE_MAX_SESSIONS=30 \
     -e SE_NODE_OVERRIDE_MAX_SESSIONS=true \
     -e SE_NODE_SESSION_TIMEOUT=30 \
+    -e SE_ENABLE_TRACING=false \
     selenium/node-chrome:${DOCKER_SELENIUM_VERSION}
