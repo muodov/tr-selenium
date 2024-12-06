@@ -1,6 +1,9 @@
 #!/bin/bash
-
 set -xe
+
+# this script runs a selenium node  in "dynamic" mode.
+# That is, a new docker container will be created for each browser session.
+# Performance is worse compared to static mode, but isolation is better.
 
 source local_params.sh
 

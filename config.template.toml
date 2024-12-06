@@ -28,4 +28,4 @@ port = 5555
 
 [node]
 session-timeout = 30
-max-sessions = 31
+max-sessions = 20

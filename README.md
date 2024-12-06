@@ -7,13 +7,18 @@ cp local_params.COPYME.sh local_params.sh
 vim local_params.sh # change the values
 chmod 777 selenium-assets # make it writable by the docker containers (it will accumulate the artifacts from all sessions)
 
-# on the main hub machine
+## On the main hub machine only
 ./hub.sh
-# optionally, run a node on the same machine
-./node-local.sh
 
-# on the other machines
+## On worker nodes:
+
+# run a node in static mode (single container per node)
+./node-static.sh
+
+# run a node in dynamic mode (container per browser session)
 ./node.sh
+
+## Helper scripts
 
 # list all containers
 sudo docker ps -a
