@@ -9,6 +9,7 @@ source local_params.sh
 
 sed -e "s/<THIS_NODE_IP>/${THIS_NODE_IP}/" \
     -e "s/<DOCKER_SELENIUM_VERSION>/${DOCKER_SELENIUM_VERSION}/" \
+    -e "s/<MAX_SESSIONS>/${MAX_SESSIONS}/" \
     ./config.template.toml > "./config.toml"
 
 
