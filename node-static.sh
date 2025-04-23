@@ -4,6 +4,7 @@ set -xe
 # this script runs a single docker container with a selenium node
 
 source local_params.sh
+source remote_params.sh
 
 # -v /dev/shm/selenium-assets:/opt/selenium/assets \
 # -v /var/run/docker.sock:/var/run/docker.sock \

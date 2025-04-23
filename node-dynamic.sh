@@ -6,6 +6,7 @@ set -xe
 # Performance is worse compared to static mode, but isolation is better.
 
 source local_params.sh
+source remote_params.sh
 
 sed -e "s/<THIS_NODE_IP>/${THIS_NODE_IP}/" \
     -e "s/<DOCKER_SELENIUM_VERSION>/${DOCKER_SELENIUM_VERSION}/" \
